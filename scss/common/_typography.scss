@@ -21,11 +21,17 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-size: 52px;
+	font-weight: $fw-black;
+	line-height: 1.1em;
 
-	@media all and (min-width: $lg) {
-		font-size: 36px
+	@media all and (min-width: $md) {
+		font-size: 75px;
 	}
+}
+
+.h2.blue {
+	color: $blue;
 }
 
 h3, .h3 {
@@ -41,7 +47,16 @@ h4, .h4 {
 }
 
 h5, .h5 {
-	font-size: $fs-xl
+	font-family: $ff;
+	font-size: 12px;
+	font-weight: $fw-black;
+	text-transform: uppercase;
+	line-height: 14px;
+	letter-spacing: 2px;
+	color: $dark;
+	text-align: center;
+	margin-bottom: 24px;
+	padding: 0 5px;
 }
 
 h6, .h6 {
