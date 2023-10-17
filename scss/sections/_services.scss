@@ -1,5 +1,9 @@
 .services {
-	padding: 96px 0;
+	padding: 60px 0;
+
+	@media all and (min-width: $md) {
+		padding: 96px 0;
+	}
 
 	&__cards {
 		display: flex;
