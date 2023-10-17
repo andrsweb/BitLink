@@ -384,6 +384,9 @@ b, strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -10px;
@@ -636,16 +639,10 @@ b, strong {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 20px;
-}
-@media all and (min-width: 1200px) {
-  .clients__stats {
-    margin-top: 0;
-  }
 }
 
 .clients__stat {
-  width: 130px;
+  width: 50%;
   padding: 30px;
   background-color: #262B2F;
 }
@@ -676,6 +673,7 @@ b, strong {
 }
 @media all and (min-width: 1200px) {
   .clients__stat {
+    width: 130px;
     position: absolute;
     padding: 30px;
   }
@@ -689,10 +687,6 @@ b, strong {
   }
 }
 @media all and (min-width: 1366px) {
-  .clients__stat {
-    position: absolute;
-    padding: 30px;
-  }
   .clients__stat.first {
     left: 53%;
   }
