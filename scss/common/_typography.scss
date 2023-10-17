@@ -1,3 +1,5 @@
+// Typography base styles
+
 @import './vars.scss';
 
 h1, .h1,
@@ -36,6 +38,10 @@ h2, .h2 {
 
 .h2.white {
 	color: $white;
+}
+
+.h2.black {
+	color: $black;
 }
 
 h3, .h3 {

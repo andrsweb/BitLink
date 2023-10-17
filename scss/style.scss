@@ -1,8 +1,12 @@
+// Base styles
 @import './common/base';
 @import './common/fonts';
 @import './common/grid';
 @import './common/typography';
-@import './common/components';
 @import './common/vars';
+// For components
+@import './common/components';
+// Styles for sections
 @import './sections/services';
 @import './sections/newsletter';
+@import './sections/clients';
