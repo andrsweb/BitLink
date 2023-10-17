@@ -35,6 +35,10 @@
 	&.white {
 		color: $white;
 	}
+
+	&.black {
+		color: $black;
+	}
 }
 
 .section__img {
@@ -52,6 +56,12 @@
 	&.left {
 		left: -9%;
 		top: 30%;
+		transform: translate(0,-50%);
+	}
+
+	&.custom {
+		left: -8.4%;
+		top: 63%;
 		transform: translate(0,-50%);
 	}
 }
