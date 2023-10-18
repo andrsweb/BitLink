@@ -31,7 +31,7 @@
 			<section class="services">
 				<div class="container">
 					<div class="section__title center">
-						<div class="section__subtitle gray">
+						<div class="section__subtitle gray animated">
 							What we do
 						</div>
 						<h2 class="h2 blue">
@@ -41,7 +41,7 @@
 							<picture>
 								<source srcset="img/services/plum.webp" type="image/webp">
 								<source srcset="img/services/plum.png" type="image/png">
-								<img src="img/services/plum.png" width="250" height="250">
+								<img class="animated" src="img/services/plum.png" width="250" height="250">
 							</picture>
 						</div>
 					</div>
@@ -182,7 +182,7 @@
 					<div class="newsletter__wrapper">
 						<div class="newsletter__info">
 							<div class="section__title start">
-								<div class="section__subtitle white">
+								<div class="section__subtitle white noAnimatedSub1">
 									Get updated
 								</div>
 								<h2 class="h2 white">
@@ -192,7 +192,7 @@
 									<picture>
 										<source srcset="img/newsletter/plum.webp" type="image/webp">
 										<source srcset="img/newsletter/plum.png" type="image/png">
-										<img src="img/newsletter/plum.png" loading="lazy" width="250" height="250">
+										<img class="noAnimateImg1" src="img/newsletter/plum.png" loading="lazy" width="250" height="250">
 									</picture>
 								</div>
 							</div>
@@ -228,8 +228,8 @@
 							<div class="clients__stats">
 								<div class="clients__stat first">
 									<div class="clients__stat_inner">
-										<div class="clients__stat_num">
-											100%
+										<div class="clients__stat_num" >
+											<span class="clientsNum" data-step="9" data-limit="100"></span> %
 										</div>
 										<p class="clients__stat_text">
 											Projects Completed
@@ -239,7 +239,7 @@
 								<div class="clients__stat second">
 									<div class="clients__stat_inner">
 										<div class="clients__stat_num">
-											10 +
+											<span class="clientsNum" data-step="1" data-limit="10"></span> +
 										</div>
 										<p class="clients__stat_text">
 											Years in Business
@@ -250,7 +250,7 @@
 						</div>
 						<div class="clients__testimonials">
 							<div class="section__title start">
-								<div class="section__subtitle black">
+								<div class="section__subtitle black noAnimatedSub2">
 									TESTIMONIALS
 								</div>
 								<h2 class="h2 black">
@@ -260,7 +260,7 @@
 									<picture>
 										<source srcset="img/clients/plum.webp" type="image/webp">
 										<source srcset="img/clients/plum.png" type="image/png">
-										<img src="img/clients/plum.png" width="250" height="250">
+										<img class="noAnimateImg2" src="img/clients/plum.png" width="250" height="250">
 									</picture>
 								</div>
 							</div>
@@ -361,12 +361,12 @@
 				<div class="footer__wrapper">
 					<div class="footer__cols">
 						<div class="footer__col">
-							<div class="footer__col_title">
+							<div class="footer__col_title firstAnim">
 								FUN FACTS
 							</div>
 							<div class="footer__col_num">
 								<span class="col__facts_num">
-									203 +
+									<span class="footerNum" data-step="5" data-limit="203"></span> +
 								</span>
 								<span class="col__facts_text">
 									CLIENTS
@@ -377,7 +377,7 @@
 							</button>
 						</div>
 						<div class="footer__col">
-							<div class="footer__col_title">
+							<div class="footer__col_title secondAnim">
 								QUICK CONTACT
 							</div>
 							<div class="footer__col_item">
@@ -402,7 +402,7 @@
 							</div>
 						</div>
 						<div class="footer__col">
-							<div class="footer__col_title">
+							<div class="footer__col_title thirdAnim">
 								USEFUL LINKS
 							</div>
 							<div class="footer__col_item">
@@ -422,7 +422,7 @@
 							</div>
 						</div>
 						<div class="footer__col">
-							<div class="footer__col_title">
+							<div class="footer__col_title lastAnim">
 								The company
 							</div>
 							<div class="footer__col_item">

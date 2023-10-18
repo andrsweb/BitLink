@@ -59,6 +59,8 @@
 	}
 
 	&_num {
+		display: flex;
+		align-items: center;
 		font-family: $ff;
 		font-weight: $fw-bold;
 		color: $yellow;
