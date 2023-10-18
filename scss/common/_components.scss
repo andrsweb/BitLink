@@ -68,6 +68,48 @@
 // 
 
 // Buttons
+.button {
+	font-family: $ff;
+	font-weight: $fw-medium;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: $black;
+	background-color: $green;
+	letter-spacing: 2px;
+	border: 0;
+	padding: 19px 48px;
+	transition: color ease $tr,
+			background-color ease $tr;
+	cursor: pointer;
+
+	&.orange {
+		padding: 13px 20px;
+		background-color: $yellow;
+
+		&:hover {
+			background-color: $yellow;
+			color: $white;
+		}
+
+		@media all and (min-width: $md) {
+			font-size: 12px;
+		}
+	}
+
+	&:hover {
+		color: $yellow;
+		background-color: #192028;
+	}
+
+	&:active {
+		background-color: #ff9a03;
+		color: $white;
+	}
+}
+
 .form__button {
 	font-family: $ff;
 	font-weight: $fw-medium;
