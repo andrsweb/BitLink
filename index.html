@@ -192,7 +192,7 @@
 									<picture>
 										<source srcset="img/newsletter/plum.webp" type="image/webp">
 										<source srcset="img/newsletter/plum.png" type="image/png">
-										<img src="img/newsletter/plum.png" width="250" height="250">
+										<img src="img/newsletter/plum.png" loading="lazy" width="250" height="250">
 									</picture>
 								</div>
 							</div>
@@ -222,7 +222,7 @@
 								<picture>
 									<source srcset="img/clients/clients.webp" type="image/webp">
 									<source srcset="img/clients/clients.png" type="image/png">
-									<img src="img/clients/clients.png" width="862" height="576">
+									<img src="img/clients/clients.png" loading="lazy" width="862" height="576">
 								</picture>
 							</div>
 							<div class="clients__stats">
@@ -353,6 +353,10 @@
 			</section>
 		</main>
 		<footer class="footer">
+			<div class="footer__overlay"></div>
+			<div class="footer__video">
+				<video src="video/highway.webm" autoplay loop="true" muted="true" playsinline></video>
+			</div>
 			<div class="container">
 				<div class="footer__wrapper">
 					<div class="footer__cols">
@@ -435,6 +439,54 @@
 							</div>
 							<div class="footer__col_item">
 								<a class="footer__col_link" href="#">Blog</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__signup">
+						<div class="footer__signup_logo">
+							<picture>
+								<source srcset="img/footer/bitlink.webp" type="image/webp">
+								<source srcset="img/img/footer/bitlink.png" type="image/png">
+								<img src="img/footer/bitlink.png" width="105" height="16">
+							</picture>
+						</div>
+						<p class="footer__signup_text">
+							Sign up for our newsletter and receive insights on using tech for improved productivity. Also be the first to get access to our great deals.
+						</p>
+						<div class="footer__signup_form">
+							<form class="form__signup">
+								<fieldset>
+									<input type="email" name="footerSignup" placeholder="Enter your email to signup">
+									<button class="button orange">
+										sign up
+									</button>
+								</fieldset>
+							</form>
+						</div>
+						<div class="footer__socials">
+							<a class="footer__social_link" href="#" target="_blank">
+								<i class="social__link fab fa-twitter"></i>
+							</a>
+							<a class="footer__social_link" href="#" target="_blank">
+								<i class="social__link fab fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer__rights">
+						<div class="footer__rights_wrapper">
+							<a href="#" class="footer__copyright">
+								Copyright ©2023 Paon Automation. All rights reserved
+							</a>
+							<div class="footer__rights_links">
+								<a href="#" class="footer__right_link">
+									Privacy Policy
+								</a>
+								<a href="#" class="footer__right_link">
+									Term of Service
+								</a>
+								<a href="#" class="footer__right_link">
+									Legal info
+								</a>
 							</div>
 						</div>
 					</div>

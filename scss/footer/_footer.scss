@@ -1,11 +1,42 @@
 .footer {
-	padding: 96px 0;
+	padding: 96px 0 40px;
 	background-color: #343548;
+	position: relative;
+	z-index: 1;
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
 	}
 
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		opacity: $op;
+		z-index: -1;
+	}
+
+	&__video{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
+		background-color: #111;
+
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// Footer top part
 	&__cols {
 		width: 100%;
 		display: flex;
@@ -78,6 +109,146 @@
 			margin-right: 5px;
 			font-size: 14px;
 			color: $white;
+		}
+	}
+
+	// Footer signup
+	&__signup {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 30px 0;
+		border-top: 1px solid #ffffff1e;
+		border-bottom: 1px solid #ffffff1e;
+		padding: 50px 0 50px;
+
+		&_logo {
+			margin-bottom: 20px;
+
+			@media all and (min-width: $md) {
+				margin-bottom: 50px;
+			}
+		}
+
+		&_text {
+			font-family: $ff;
+			font-weight: $fw-semibold;
+			width: 100%;
+			max-width: 674px;
+			font-size: 14px;
+			text-align: center;
+			color: #a7a7a7;
+			margin-bottom: 24px;
+
+			@media all and (min-width: $md) {
+				font-size: 19px;
+			}
+		}
+
+		&_form {
+			width: 100%;
+			max-width: 683px;
+			margin-bottom: 30px;
+
+			fieldset {
+				display: flex;
+				flex-direction: column;
+
+				input {
+					padding: 8px 16px;
+					max-width: 537px;
+					margin-bottom: 10px;
+					
+					@media all and (min-width: $sm) {
+						margin-bottom: 0;
+						margin-right: 10px;
+					}
+				}
+
+				@media all and (min-width: $sm) {
+					flex-direction: row;
+				}
+			}
+		}
+
+		@media all and (min-width: $md) {
+			margin: 100px 0 30px;
+			padding: 100px 0 100px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+	}
+
+	&__social_link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		width: 32px;
+		height: 32px;
+		background-color: #1da1f2;
+		margin-right: 10px;
+		transition: opacity ease $tr;
+
+		.social__link {
+			font-size: 16px;
+			color: $white;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			opacity: $op;
+			text-decoration: none;
+		}
+	}
+
+	// Footer rights
+	&__rights {
+		display: flex;
+
+		&_wrapper {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+			@media all and (min-width: $xl) {
+				flex-direction: row;
+			}
+		}
+	}
+
+	&__copyright, &__right_link {
+		font-family: $ff;
+		font-weight: $fw-regular;
+		font-size: 16px;
+		color: #aaaaaa;
+	}
+
+	&__copyright {
+		text-decoration: underline;
+		margin-bottom: 15px;
+
+		&:hover {
+			text-decoration-color: #aaaaaa;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__right_link {
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 }
