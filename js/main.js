@@ -54,23 +54,23 @@ document.addEventListener('scroll', () => {
 
 	if(!image1 && image2) return
 
-	if (isInScope('.noAnimateImg1', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope functuion, hang the animated class.
+	if (isInScope('.noAnimateImg1', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope function, hang the animated class.
 		image1.classList.add('animated')
 	}
 
-	if (isInScope('.noAnimateImg2', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope functuion, hang the animated class.
+	if (isInScope('.noAnimateImg2', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope function, hang the animated class.
 		image2.classList.add('animated')
 	}
 
-	if (isInScope('.noAnimateImg1', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope functuion, hang the animated class.
+	if (isInScope('.noAnimateImg1', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope function, hang the animated class.
 		subtitle1.classList.add('animated')
 	}
 
-	if (isInScope('.noAnimateImg2', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope functuion, hang the animated class.
+	if (isInScope('.noAnimateImg2', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope function, hang the animated class.
 		subtitle2.classList.add('animated')
 	}
 	
-	if (isInScope('.footer', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope functuion, hang the animated class.
+	if (isInScope('.footer', window.scrollY)) { //Check when our block appears in the viewport and call isIncsope function, hang the animated class.
 		footer.classList.add('animated')
 	}
 
