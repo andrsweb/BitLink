@@ -1,0 +1,172 @@
+// H2 title wrapper
+.section__title {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 60px;
+	z-index: 1;
+
+	&.start {
+		align-items: flex-start;
+	}
+
+	&.center {
+		align-items: center;
+	}
+}
+
+.section__subtitle {
+	font-family: $ff;
+	font-size: 12px;
+	font-weight: $fw-medium;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+
+	@media all and (min-width:$md) {
+		font-size: 14px;
+	}
+
+	&.gray {
+		color: $gray;
+	}
+
+	&.white {
+		color: $white;
+	}
+
+	&.black {
+		color: $black;
+	}
+
+	&.animated {
+		animation: transformTitle 4s ease;
+	}
+
+	@keyframes transformTitle {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+.section__img {
+	position: absolute;
+	z-index: -1;
+	width: 250px;
+	height: 250px;
+	
+
+	&.centered {
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	&.left {
+		left: -9%;
+		top: 30%;
+		transform: translate(0,-50%);
+	}
+
+	&.custom {
+		left: -8.4%;
+		top: 63%;
+		transform: translate(0,-50%);
+	}
+
+	img {
+		&.animated {
+			animation: transform 2s forwards ease;
+		}
+
+		@keyframes transform {
+			0% {
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+
+			100% {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+	}
+}
+// 
+
+// Buttons
+.button {
+	font-family: $ff;
+	font-weight: $fw-medium;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: $black;
+	background-color: $green;
+	letter-spacing: 2px;
+	border: 0;
+	padding: 19px 48px;
+	transition: color ease $tr,
+			background-color ease $tr;
+	cursor: pointer;
+
+	&.orange {
+		padding: 13px 20px;
+		background-color: $yellow;
+
+		&:hover {
+			background-color: $yellow;
+			color: $white;
+		}
+
+		@media all and (min-width: $md) {
+			font-size: 12px;
+		}
+	}
+
+	&:hover {
+		color: $yellow;
+		background-color: #192028;
+	}
+
+	&:active {
+		background-color: #ff9a03;
+		color: $white;
+	}
+}
+
+.form__button {
+	font-family: $ff;
+	font-weight: $fw-medium;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $yellow;
+	color: $dark;
+	font-size: 20px;
+	border-radius: 50px;
+	padding: 14px 40px;
+	cursor: pointer;
+	transition: background-color ease $tr,
+			color ease $tr;
+
+	&:hover {
+		color: $white;
+		background-color: #ffbc03;
+	}
+
+	&:active {
+		background-color: #ff9a03;
+	}
+}

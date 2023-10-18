@@ -1,3 +1,5 @@
+// Vars
+
 // Grid.
 $xs	: 375px;
 $sm	: 480px;
@@ -9,14 +11,15 @@ $xxl: 1366px;
 // Container max-width.
 $container-md: 760px;
 $container-lg: 990px;
-$container-xl: 1200px;
+$container-xl: 1180px;
 
 // Container padding.
-$container-padding: 24px;
+$container-padding: 20px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Roboto', sans-serif;
+$ff-slab	: 'Roboto Slab', sans-serif;
+$ff-merri	: 'Merriweather', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -26,19 +29,32 @@ $fs-lg	: 18px;
 $fs-xl	: 20px;
 
 // Font weights.
+$fw-thin	: 100;
 $fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
 $fw-semibold: 600;
 $fw-bold	: 700;
+$fw-black	: 800;
 
 // Line heights.
 $lh			: 1.5;
 $lh-title	: 1.3;
 
 // Colors.
-$white	: #FFFFFF;
-$black	: #000000;
+$white	    : #FFFFFF;
+$light	    : #F4F4F4;
+$black	    : #000000;
+$dark	    : #333333;
+$dark-blue  : #242933;
+$yellow	    : #FFD500;
+$gold	    : #deb900;
+$green	    : #61CE70;
+$gray	    : #797979;
+$blue	    : #6ec1e4;
+$swiper-text: #54595f;
+
 
 // Others.
 $tr: 0.35s;
+$op: 0.7;
