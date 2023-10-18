@@ -4,6 +4,39 @@
 	position: relative;
 	z-index: 1;
 
+	&.animated {
+		
+		.footer__col_title {
+			&.firstAnim {
+				animation: footerTitles 1s ease forwards;
+			}
+
+			&.secondAnim {
+				animation: footerTitles 2s ease forwards;
+			}
+
+			&.thirdAnim {
+				animation: footerTitles 3s ease forwards;
+			}
+
+			&.lastAnim {
+				animation: footerTitles 4s ease forwards;
+			}
+
+			@keyframes footerTitles {
+				0% {
+					opacity: 0;
+					transform: translateY(100%);
+				}
+	
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -80,7 +113,7 @@
 
 	.col__facts_num {
 		display: flex;
-		flex-direction: column;
+		// flex-direction: column;
 		font-family: $ff;
 		color: $white;
 		font-size: 68px;
