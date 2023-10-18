@@ -17,6 +17,11 @@ const initSwiper = (selector, view, pag) => {
 		pagination: {
 			el: pag,
 			clickable: true //Enable click on dots of paginationю
+		},
+
+		autoplay: {
+			delay: 7000, // Delay between slides
+			disableOnInteraction: false // Set to false and autoplay will not be disabled after user interactions (swipes), it will be restarted every time after interaction
 		}
 	});
 
